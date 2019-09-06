@@ -1,0 +1,24 @@
+export default [
+  {
+    path:"/",
+    redirect:"/login"
+  },
+{
+  path:"/music",
+  name:"music",
+  component:()=>import("../views/music/")
+},
+{
+  path:"/login",
+  component:()=>import("../views/login/")
+},
+{
+  path:"/registry",
+  component:()=>import("../views/registry/")
+},
+{
+  path:"*",
+  name:"404",
+  component:()=>import("../views/404/")
+}
+]
